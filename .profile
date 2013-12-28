@@ -10,6 +10,12 @@
 #   ctrl-r
 #
 
+PS1="\h>"
+
+OS=`/bin/uname`
+ARCH=`/bin/uname -m`
+BINTYPE=$ARCH.$OS
+
 # ssh aliases
 alias v01='ssh bddicken@v01.cs.arizona.edu'
 alias v='ssh bddicken@vision.cs.arizona.edu'
@@ -30,7 +36,10 @@ alias w='w | sort'
 alias thisissparta='rm'
 alias ls='ls -Gl'
 alias rls='find .'
-alias restart="source ~/.profile"
+alias resb="source ~/.profile"
+alias printers="lpstat -a"
+alias mcm='make clean ; make'
+alias macros='echo | cpp -dM -E -'
 
 # directory aliases
 alias cl='cd ~/Classes'
@@ -41,8 +50,8 @@ alias psite='cd ~/Dropbox/bd/public_html/site'
 alias todo='vim /Users/ibend1/Dropbox/Documents/todo.txt'
 alias todoc='rm -rf /Users/ibend1/Dropbox/Documents/.*todo*'
 
-# shortcut to budget
-alias bud='open ~/Documents/Budget/Budget_2013.3.30-.xlsx'
+# compilers and interpreters
+alias gcc="c99 -g -Wall"
 
 # system stuff
 BINTYPE=$ARCH.$OS
@@ -67,15 +76,26 @@ shopt -s histappend
 
 # path
 BINTYPE=$ARCH.$OS
-PATH=.
-MANPATH=$HOME/man
-NNTPSERVER=news.cs.arizona.edu
+PATH=.:./
 PATH=$PATH:/usr/local/bin:/sbin:/usr/sbin
 PATH=$PATH:/bin:/usr/bin:/usr/local/sbin:~/bin
 PATH=$PATH:/home/bddicken/android-sdk-linux/tools/lib
 PATH=/usr/texbin:$PATH
+PATH=/usr/local/pgsql/bin:$PATH
+
+#manpath
+MANPATH=$HOME/man
 MANPATH=$MANPATH:/usr/man:/usr/local/man:/usr/X11/man
+
 export PATH
+
+# history
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
+shopt -s histappend
+
+# news server
+NNTPSERVER=news.cs.arizona.edu
 
 #
 # Use vim for man page viewing
