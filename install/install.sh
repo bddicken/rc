@@ -1,4 +1,4 @@
-#~/bin/bash
+#!/bin/bash
 
 #
 # Change system to use .*rc files from this repo
