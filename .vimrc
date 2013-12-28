@@ -51,7 +51,7 @@ set expandtab
 
 " cursor line and column highlighting
 set cursorcolumn
-"set cursorline
+set cursorline
 "hi CursorLine   cterm=NONE ctermbg=grey ctermfg=black
 
 "

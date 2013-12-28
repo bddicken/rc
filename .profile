@@ -56,8 +56,6 @@ alias gcc="c99 -g -Wall"
 # system stuff
 BINTYPE=$ARCH.$OS
 
-# MacPorts Installer addition on 2012-06-02_at_21:34:09: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export SVN_EDITOR=vim
 
 # misc command overrides
@@ -67,14 +65,14 @@ alias cinf="/usr/sbin/system_profiler"
 # change default prompt
 PS1="\h:> "
 
+#
 # Control color
+#
 export TERM="xterm-256color"
 
-export HISTCONTROL=erasedups
-export HISTSIZE=10000
-shopt -s histappend
-
+#
 # path
+#
 BINTYPE=$ARCH.$OS
 PATH=.:./
 PATH=$PATH:/usr/local/bin:/sbin:/usr/sbin
@@ -82,20 +80,16 @@ PATH=$PATH:/bin:/usr/bin:/usr/local/sbin:~/bin
 PATH=$PATH:/home/bddicken/android-sdk-linux/tools/lib
 PATH=/usr/texbin:$PATH
 PATH=/usr/local/pgsql/bin:$PATH
-
-#manpath
 MANPATH=$HOME/man
 MANPATH=$MANPATH:/usr/man:/usr/local/man:/usr/X11/man
-
 export PATH
 
+#
 # history
+#
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 shopt -s histappend
-
-# news server
-NNTPSERVER=news.cs.arizona.edu
 
 #
 # Use vim for man page viewing
@@ -105,9 +99,7 @@ export PAGER="/bin/sh -c \"unset PAGER;col -b -x | \
     -c 'map <SPACE> <C-D>' -c 'map b <C-U>' \
     -c 'nmap K :Man <C-R>=expand(\\\"<cword>\\\")<CR><CR>' -\""
 
-
 #
 # Tree-structured ls
 #
 alias lst="find . -name '*' | sed -e 's/^/|-/' -e 's/[^-][^\/]*\//|   /g' -e 's/|   \([A-Za-z0-9_.]\)/|   +--\1/'"
-
