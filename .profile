@@ -40,6 +40,7 @@ alias resb="source ~/.profile"
 alias printers="lpstat -a"
 alias mcm='make clean ; make'
 alias macros='echo | cpp -dM -E -'
+alias hosts='vim /etc/hosts'
 
 # directory aliases
 alias cl='cd ~/Classes'
