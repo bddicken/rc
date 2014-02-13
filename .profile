@@ -52,7 +52,7 @@ alias todo='vim /Users/ibend1/Dropbox/Documents/todo.txt'
 alias todoc='rm -rf /Users/ibend1/Dropbox/Documents/.*todo*'
 
 # compilers and interpreters
-alias gcc="c99 -g -Wall"
+#alias gcc="c99 -g -Wall"
 
 # system stuff
 BINTYPE=$ARCH.$OS
