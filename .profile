@@ -34,7 +34,7 @@ alias v01='ssh bddicken@v01.cs.arizona.edu'
 alias c='clear'
 alias w='w | sort'
 alias thisissparta='rm'
-alias ls='ls -Gl'
+#alias ls='ls -Gl'
 alias rls='find .'
 alias resb="source ~/.profile"
 alias printers="lpstat -a"
@@ -48,8 +48,8 @@ alias azw='cd /cd/projects/tau/installations/azdblab/web/apache-tomcat-7.0.30'
 alias psite='cd ~/Dropbox/bd/public_html/site'
 
 # shortcut to my todo list
-alias todo='vim /Users/ibend1/Dropbox/Documents/todo.txt'
-alias todoc='rm -rf /Users/ibend1/Dropbox/Documents/.*todo*'
+alias todo='vim ~/Dropbox/Documents/todo.txt'
+alias todoc='rm -rf ~/Dropbox/Documents/.*todo*'
 
 # compilers and interpreters
 #alias gcc="c99 -g -Wall"
