@@ -41,6 +41,7 @@ alias printers="lpstat -a"
 alias mcm='make clean ; make'
 alias macros='echo | cpp -dM -E -'
 alias hosts='vim /etc/hosts'
+alias fdu='du -h ./* | sort -h -r'
 
 # directory aliases
 alias cl='cd ~/Classes'
