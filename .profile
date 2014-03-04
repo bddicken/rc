@@ -42,6 +42,7 @@ alias mcm='make clean ; make'
 alias macros='echo | cpp -dM -E -'
 alias hosts='vim /etc/hosts'
 alias fdu='du -h ./* | sort -h -r'
+alias userlist='cat /etc/passwd |grep "/bin/bash" |grep "[5-9][0-9][0-9]" |cut -d: -f1'
 
 # directory aliases
 alias cl='cd ~/Classes'
