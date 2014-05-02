@@ -35,7 +35,6 @@ alias c='clear'
 alias w='w | sort'
 alias thisissparta='rm'
 alias webserver='python -m SimpleHTTPServer 8000'
-#alias ls='ls -Gl'
 alias rls='find .'
 alias resb="source ~/.profile"
 alias printers="lpstat -a"
