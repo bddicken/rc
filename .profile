@@ -35,12 +35,15 @@ alias c='clear'
 alias w='w | sort'
 alias thisissparta='rm'
 alias vim='vim -O'
+alias webserver='python -m SimpleHTTPServer 8000'
 alias rls='find .'
 alias resb="source ~/.profile"
 alias printers="lpstat -a"
 alias mcm='make clean ; make'
 alias macros='echo | cpp -dM -E -'
 alias hosts='vim /etc/hosts'
+alias fdu='du -h ./* | sort -h -r'
+alias userlist='cat /etc/passwd |grep "/bin/bash" |grep "[5-9][0-9][0-9]" |cut -d: -f1'
 
 # directory aliases
 alias cl='cd ~/Classes'
@@ -75,12 +78,12 @@ export TERM="xterm-256color"
 # path
 #
 BINTYPE=$ARCH.$OS
-PATH=.:./
 PATH=$PATH:/usr/local/bin:/sbin:/usr/sbin
 PATH=$PATH:/bin:/usr/bin:/usr/local/sbin:~/bin
 PATH=$PATH:/home/bddicken/android-sdk-linux/tools/lib
 PATH=/usr/texbin:$PATH
 PATH=/usr/local/pgsql/bin:$PATH
+PATH=$PATH:.:./
 MANPATH=$HOME/man
 MANPATH=$MANPATH:/usr/man:/usr/local/man:/usr/X11/man
 export PATH
