@@ -34,7 +34,7 @@ alias v01='ssh bddicken@v01.cs.arizona.edu'
 alias c='clear'
 alias w='w | sort'
 alias thisissparta='rm'
-#alias ls='ls -Gl'
+alias vim='vim -O'
 alias rls='find .'
 alias resb="source ~/.profile"
 alias printers="lpstat -a"
@@ -60,7 +60,7 @@ BINTYPE=$ARCH.$OS
 export SVN_EDITOR=vim
 
 # misc command overrides
-alias wget="curl -O"
+#alias wget="curl -O"
 alias cinf="/usr/sbin/system_profiler"
 
 # change default prompt
@@ -104,3 +104,13 @@ export PAGER="/bin/sh -c \"unset PAGER;col -b -x | \
 # Tree-structured ls
 #
 alias lst="find . -name '*' | sed -e 's/^/|-/' -e 's/[^-][^\/]*\//|   /g' -e 's/|   \([A-Za-z0-9_.]\)/|   +--\1/'"
+
+#
+# Git stuff
+#
+export GIT_EDITOR=vim
+export VISUAL=vim
+export EDITOR=vim
+if [ -f ~/rc/.git-completion.bash ]; then
+    . ~/rc/.git-completion.bash
+fi
