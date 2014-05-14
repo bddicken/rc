@@ -40,6 +40,7 @@ alias rls='find .'
 alias resb="source ~/.profile"
 alias printers="lpstat -a"
 alias mcm='make clean ; make'
+alias aca='ant clean ; ant'
 alias macros='echo | cpp -dM -E -'
 alias hosts='vim /etc/hosts'
 alias fdu='du -h ./* | sort -h -r'
