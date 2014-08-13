@@ -35,7 +35,8 @@ alias c='clear'
 alias w='w | sort'
 alias thisissparta='rm'
 alias vim='vim -O'
-alias webserver='python -m SimpleHTTPServer 8000'
+alias webserv='python -m SimpleHTTPServer 8000'
+alias webservj='jekyll serve --watch'
 alias rls='find .'
 alias resb="source ~/.profile"
 alias printers="lpstat -a"
@@ -120,3 +121,5 @@ alias lst="find . -name '*' | sed -e 's/^/|-/' -e 's/[^-][^\/]*\//|   /g' -e 's/
 #if [ -f ~/rc/.git-completion.bash ]; then
 #    . ~/rc/.git-completion.bash
 #fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
