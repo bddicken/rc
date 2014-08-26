@@ -115,9 +115,9 @@ alias lst="find . -name '*' | sed -e 's/^/|-/' -e 's/[^-][^\/]*\//|   /g' -e 's/
 # Git stuff
 #
 
-#export GIT_EDITOR=vim
-#export VISUAL=vim
-#export EDITOR=vim
+export GIT_EDITOR=vim
+export VISUAL=vim
+export EDITOR=vim
 #if [ -f ~/rc/.git-completion.bash ]; then
 #    . ~/rc/.git-completion.bash
 #fi
