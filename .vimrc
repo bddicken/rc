@@ -34,6 +34,7 @@ set number
 
 " Set the vim color scheme to slate
 colorscheme slate
+colorscheme zenburn
 
 " Always show the file name
 set modeline

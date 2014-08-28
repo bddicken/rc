@@ -34,11 +34,15 @@ alias v01='ssh bddicken@v01.cs.arizona.edu'
 alias c='clear'
 alias w='w | sort'
 alias thisissparta='rm'
-#alias ls='ls -Gl'
+alias vim='vim -O'
+alias webserv='python -m SimpleHTTPServer 8000'
+alias webservj='jekyll serve --watch'
 alias rls='find .'
 alias resb="source ~/.profile"
 alias printers="lpstat -a"
 alias mcm='make clean ; make'
+alias mcmt='make clean ; make ; make test'
+alias aca='ant clean ; ant'
 alias macros='echo | cpp -dM -E -'
 alias hosts='vim /etc/hosts'
 alias fdu='du -h ./* | sort -h -r'
@@ -62,7 +66,7 @@ BINTYPE=$ARCH.$OS
 export SVN_EDITOR=vim
 
 # misc command overrides
-alias wget="curl -O"
+#alias wget="curl -O"
 alias cinf="/usr/sbin/system_profiler"
 
 # change default prompt
@@ -77,12 +81,12 @@ export TERM="xterm-256color"
 # path
 #
 BINTYPE=$ARCH.$OS
-PATH=.:./
 PATH=$PATH:/usr/local/bin:/sbin:/usr/sbin
 PATH=$PATH:/bin:/usr/bin:/usr/local/sbin:~/bin
 PATH=$PATH:/home/bddicken/android-sdk-linux/tools/lib
 PATH=/usr/texbin:$PATH
 PATH=/usr/local/pgsql/bin:$PATH
+PATH=$PATH:.:./
 MANPATH=$HOME/man
 MANPATH=$MANPATH:/usr/man:/usr/local/man:/usr/X11/man
 export PATH
@@ -106,3 +110,16 @@ export PAGER="/bin/sh -c \"unset PAGER;col -b -x | \
 # Tree-structured ls
 #
 alias lst="find . -name '*' | sed -e 's/^/|-/' -e 's/[^-][^\/]*\//|   /g' -e 's/|   \([A-Za-z0-9_.]\)/|   +--\1/'"
+
+#
+# Git stuff
+#
+
+export GIT_EDITOR=vim
+export VISUAL=vim
+export EDITOR=vim
+#if [ -f ~/rc/.git-completion.bash ]; then
+#    . ~/rc/.git-completion.bash
+#fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

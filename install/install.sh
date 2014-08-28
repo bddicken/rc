@@ -4,9 +4,9 @@
 # Change system to use .*rc files from this repo
 #
 
-echo "source ~/rc/.profile" > ~/.profile
-echo "source ~/rc/.bashrc" > ~/.bashrc
-rm -rf ~/.vimrc
+rm -rf ~/.vimrc ~/.profile ~/.bashrc
+ln -s ~/rc/.profile ~/.profile
+ln -s ~/rc/.bashrc ~/.bashrc
 ln -s ~/rc/.vimrc ~/.vimrc
 
 source ~/.profile
