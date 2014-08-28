@@ -56,6 +56,9 @@ set expandtab
 set cursorcolumn
 set cursorline
 "hi CursorLine   cterm=NONE ctermbg=grey ctermfg=black
+"hi CursorLine   cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkred guifg=white
+"hi CursorColumn cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkred guifg=white
+"nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
 "
 " set vim as the default man page viewer
