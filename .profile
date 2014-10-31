@@ -114,6 +114,9 @@ alias lst="find . -name '*' | sed -e 's/^/|-/' -e 's/[^-][^\/]*\//|   /g' -e 's/
 #
 # Git stuff
 #
+git config merge.tool vimdiff
+git config merge.conflictstyle diff3
+git config mergetool.prompt false
 
 export GIT_EDITOR=vim
 export VISUAL=vim
