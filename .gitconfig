@@ -1,0 +1,8 @@
+[user]
+	email = bddicken@gmail.com
+	name = bddicken
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
