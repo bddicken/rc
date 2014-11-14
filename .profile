@@ -48,6 +48,9 @@ alias hosts='vim /etc/hosts'
 alias fdu='du -h ./* | sort -h -r'
 alias userlist='cat /etc/passwd |grep "/bin/bash" |grep "[5-9][0-9][0-9]" |cut -d: -f1'
 
+# dataware aliases
+alias astc='ast_creator'
+
 # directory aliases
 alias cl='cd ~/Classes'
 alias azw='cd /cd/projects/tau/installations/azdblab/web/apache-tomcat-7.0.30'
