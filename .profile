@@ -49,7 +49,7 @@ alias fdu='du -h ./* | sort -h -r'
 alias userlist='cat /etc/passwd |grep "/bin/bash" |grep "[5-9][0-9][0-9]" |cut -d: -f1'
 alias vg='valgrind'
 alias callg='valgrind --tool=callgrind'
-alias kcache='kcachegrind *grind*'
+alias kche='kcachegrind *grind*'
 
 # dataware aliases
 alias astc='ast_creator'
