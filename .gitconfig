@@ -2,7 +2,10 @@
 	email = bddicken@gmail.com
 	name = bddicken
 [merge]
-	tool = vimdiff
-	conflictstyle = diff3
+	tool = /usr/local/bin/git-diff.sh
+	#tool = vimdiff
+	#conflictstyle = diff3
 [mergetool]
 	prompt = false
+[diff]
+	external = /usr/local/bin/git-diff.sh

@@ -87,15 +87,23 @@ export TERM="xterm-256color"
 # path
 #
 BINTYPE=$ARCH.$OS
+PATH=$PATH:/usr/local/sbin
+PATH=$PATH:/usr/sbin
+PATH=$PATH:/sbin
 PATH=$PATH:/usr/local/bin:/sbin:/usr/sbin
-PATH=$PATH:/bin:/usr/bin:/usr/local/sbin:~/bin
+PATH=$PATH:/bin
+PATH=$PATH:/usr/bin
+PATH=$PATH:~/bin
 PATH=$PATH:/home/bddicken/android-sdk-linux/tools/lib
-PATH=/usr/texbin:$PATH
-PATH=/usr/local/pgsql/bin:$PATH
-PATH=$PATH:.:./
+PATH=$PATH:/usr/texbin
+PATH=$PATH:/usr/local/pgsql/bin
+PATH=$PATH:./
+PATH=$PATH:.
+PATH=$PATH:/usr/local/bin/mongodb-linux-x86_64-2.6.7/bin/
+export PATH
+
 MANPATH=$HOME/man
 MANPATH=$MANPATH:/usr/man:/usr/local/man:/usr/X11/man
-export PATH
 
 #
 # history
