@@ -10,6 +10,8 @@
 #   ctrl-r
 #
 
+#chsh -s /bin/zsh
+
 PS1="\h>"
 
 OS=`/bin/uname`
@@ -76,7 +78,7 @@ export SVN_EDITOR=vim
 alias cinf="/usr/sbin/system_profiler"
 
 # change default prompt
-PS1="\h:> "
+PS1="%/ <> "
 
 #
 # Control color
@@ -109,7 +111,7 @@ MANPATH=$MANPATH:/usr/man:/usr/local/man:/usr/X11/man
 # history
 #
 export HISTCONTROL=erasedups
-export HISTSIZE=10000
+export HISTSIZE=100000
 shopt -s histappend
 
 #
