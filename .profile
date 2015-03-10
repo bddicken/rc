@@ -12,6 +12,8 @@
 
 #chsh -s /bin/zsh
 
+bindkey -e
+
 PS1="\h>"
 
 OS=`/bin/uname`
@@ -112,7 +114,8 @@ MANPATH=$MANPATH:/usr/man:/usr/local/man:/usr/X11/man
 #
 export HISTCONTROL=erasedups
 export HISTSIZE=100000
-shopt -s histappend
+export SAVEHIST=100000
+export HISTFILE=~/.history
 
 #
 # Use vim for man page viewing

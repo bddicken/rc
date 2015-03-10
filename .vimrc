@@ -43,8 +43,8 @@ set ls=2
 " To get color themes to show up correctly
 let &t_Co=256
 
-" Default to no wrap
-set nowrap
+" Default to wrap
+set wrap
 
 " tabs become 4 spaces
 set tabstop=4
