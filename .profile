@@ -54,6 +54,7 @@ alias userlist='cat /etc/passwd |grep "/bin/bash" |grep "[5-9][0-9][0-9]" |cut -
 alias vg='valgrind'
 alias callg='valgrind --tool=callgrind'
 alias kche='kcachegrind *grind*'
+alias fm='sudo sysctl -w vm.drop_caches=3'
 
 # dataware aliases
 alias astc='ast_creator'
