@@ -44,7 +44,7 @@ set ls=2
 let &t_Co=256
 
 " Default to wrap
-set wrap
+set nowrap
 
 " tabs become 4 spaces
 set tabstop=4

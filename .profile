@@ -55,6 +55,7 @@ alias vg='valgrind'
 alias callg='valgrind --tool=callgrind'
 alias kche='kcachegrind *grind*'
 alias fm='sudo sysctl -w vm.drop_caches=3'
+alias hg='history 0 | grep'
 
 # dataware aliases
 alias astc='ast_creator'
@@ -105,6 +106,7 @@ PATH=$PATH:/usr/local/pgsql/bin
 PATH=$PATH:./
 PATH=$PATH:.
 PATH=$PATH:/usr/local/bin/mongodb-linux-x86_64-2.6.7/bin/
+PATH=$PATH:/dataware/tools/lib/clangllvm-3.4-x86_64-linux-gnu-ubuntu-13.10/bin/
 export PATH
 
 MANPATH=$HOME/man
