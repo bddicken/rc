@@ -1,5 +1,5 @@
 #
-# Shell programs to remember/use/get better at
+# Remember:
 #   yes
 #   iotop
 #   /usr/sbin/system_profiler
@@ -20,7 +20,12 @@ OS=`/bin/uname`
 ARCH=`/bin/uname -m`
 BINTYPE=$ARCH.$OS
 
+# git aliases
+alias gfgp='git fetch ; git pull'
+alias gp='git push'
+
 # ssh aliases
+alias node='nodejs'
 alias v01='ssh bddicken@v01.cs.arizona.edu'
 alias v='ssh bddicken@vision.cs.arizona.edu'
 alias lec='ssh bddicken@lectura.cs.arizona.edu'
@@ -151,3 +156,4 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # dataware general
 export PIN_HOME="/dataware/tools/lib/pin/"
+
