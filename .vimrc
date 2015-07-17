@@ -54,7 +54,7 @@ set sw=4
 set expandtab
 
 " cursor line and column highlighting
-set cursorcolumn
+"set cursorcolumn
 set cursorline
 "hi CursorLine   cterm=NONE ctermbg=grey ctermfg=black
 "hi CursorLine   cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkred guifg=white

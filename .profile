@@ -98,6 +98,7 @@ export TERM="xterm-256color"
 # path
 #
 BINTYPE=$ARCH.$OS
+PATH=$PATH:/dataware/irtools/opt/bin
 PATH=$PATH:/usr/local/sbin
 PATH=$PATH:/usr/sbin
 PATH=$PATH:/sbin
