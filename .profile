@@ -21,11 +21,9 @@ ARCH=`/bin/uname -m`
 BINTYPE=$ARCH.$OS
 
 # git aliases
-alias gfgp='git fetch ; git pull'
-alias gp='git push'
 alias gf='git fetch'
 alias gp='git pull'
-alias gfp='gf ; gp'
+alias gfgp='gf ; gp'
 
 # ssh aliases
 alias node='nodejs'
