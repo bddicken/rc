@@ -23,6 +23,7 @@ BINTYPE=$ARCH.$OS
 # git aliases
 alias gf='git fetch'
 alias gp='git pull'
+alias gb='git branch'
 alias gfgp='gf ; gp'
 
 # ssh aliases
