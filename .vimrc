@@ -29,9 +29,6 @@ au BufWrite /private/tmp/crontab.* set nowritebackup
 " Don't write backup file if vim is being called by "chpass"
 au BufWrite /private/etc/pw.* set nowritebackup
 
-" Turn on line numbers by default
-set number
-
 " Set the vim color scheme to slate
 " colorscheme zenburn
 colorscheme slate
@@ -43,13 +40,9 @@ set ls=2
 " To get color themes to show up correctly
 let &t_Co=256
 
-" Default to wrap
-set nowrap
-
-" tabs become 4 spaces
+" Basically, make tabs 4 spaces
 set tabstop=4
 set shiftwidth=4
-set tabstop=4
 set sw=4
 set expandtab
 
@@ -72,3 +65,21 @@ let $PAGER=''
 " remove stuput concealing for LaTeX
 let g:tex_conceal = ""
 
+" Make scrollng better crolling
+set sidescroll=5
+set listchars+=precedes:<,extends:>
+
+" Turn on line numbers by default
+set number
+
+" Default to wrap
+set nowrap
+
+" Map keys to move line up
+map - ddp
+" Map keys to move line down
+map _ dd<up><up>p
+
+" Currently going through the VIM book at http://learnvimscriptthehardway.stevelosh.com
+
+echom ">^.^<"
