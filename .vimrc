@@ -47,19 +47,19 @@ set sw=4
 set expandtab
 
 " cursor line and column highlighting
-"set cursorcolumn
 set cursorline
 "hi CursorLine   cterm=NONE ctermbg=grey ctermfg=black
 "hi CursorLine   cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkred guifg=white
-"hi CursorColumn cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkred guifg=white
-"nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+set cursorcolumn
+hi CursorColumn cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkred guifg=white
+nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
 "
 " set vim as the default man page viewer
 "
 let $PAGER=''
 
-" only syntax highlight up to 120 chars
+" only syntax highlight up to 120 chars per row
 "set synmaxcol=120
 
 " remove stuput concealing for LaTeX
@@ -82,4 +82,6 @@ map _ dd<up><up>p
 
 " Currently going through the VIM book at http://learnvimscriptthehardway.stevelosh.com
 
-echom ">^.^<"
+" Echo a message on startup (disabled for now)
+" echom ">^.^<"
+
