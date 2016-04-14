@@ -12,6 +12,7 @@
 
 #chsh -s /bin/zsh
 
+### Linux 14.4 gives me an warning on startup when this is uncommented on 
 bindkey -e
 
 PS1="\h>"
@@ -60,10 +61,11 @@ alias fdu='du -h ./* | sort -h -r'
 alias userlist='cat /etc/passwd |grep "/bin/bash" |grep "[5-9][0-9][0-9]" |cut -d: -f1'
 alias vg='valgrind'
 alias callg='valgrind --tool=callgrind'
-alias memc='valgrind --tool=memcheck --leack-check=full'
+alias memc='valgrind --tool=memcheck --leak-check=full'
 alias kche='kcachegrind *grind*'
 alias fm='sudo sysctl -w vm.drop_caches=3'
 alias hg='history 0 | grep'
+alias cpur='sudo service cpufreqd restart'
 
 # dataware aliases
 alias astc='ast_creator'
@@ -98,9 +100,16 @@ PS1="%/ <> "
 export TERM="xterm-256color"
 
 #
+# lib path
+#
+LD_LIBRARY_PATH=/dataware/stock_pg_install/bin/:/dataware/stock_pg_install/lib
+export LD_LIBRARY_PATH
+
+#
 # path
 #
 BINTYPE=$ARCH.$OS
+#PATH=/dataware/stock_pg_install/bin/:/dataware/stock_pg_install/lib
 PATH=$PATH:/dataware/irtools/opt/bin
 PATH=$PATH:/usr/local/sbin
 PATH=$PATH:/usr/sbin
@@ -111,7 +120,7 @@ PATH=$PATH:/usr/bin
 PATH=$PATH:~/bin
 PATH=$PATH:/home/bddicken/android-sdk-linux/tools/lib
 PATH=$PATH:/usr/texbin
-PATH=$PATH:/usr/local/pgsql/bin
+#PATH=$PATH:/usr/local/pgsql/bin
 PATH=$PATH:./
 PATH=$PATH:.
 PATH=$PATH:/usr/local/bin/mongodb-linux-x86_64-2.6.7/bin/
@@ -120,6 +129,11 @@ export PATH
 
 MANPATH=$HOME/man
 MANPATH=$MANPATH:/usr/man:/usr/local/man:/usr/X11/man
+
+#
+# Java CLASSPATH
+#
+export CLASSPATH=/usr/share/java/junit4.jar
 
 #
 # history

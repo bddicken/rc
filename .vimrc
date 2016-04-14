@@ -55,7 +55,7 @@ cabbrev vre vertical resize
 " To get color themes to show up correctly
 let &t_Co=256
 
-" Basically, make tabs 4 spaces
+" Basically, make tabs 2 spaces
 set tabstop=4
 set shiftwidth=4
 set sw=4
