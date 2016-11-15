@@ -1,5 +1,9 @@
+###
+### bddicken's .profile
+###
+
 #
-# Remember:
+# Useful commands to remember:
 #   yes
 #   iotop
 #   /usr/sbin/system_profiler
@@ -28,7 +32,6 @@ alias gb='git branch'
 alias gfgp='gf ; gp'
 
 # ssh aliases
-alias node='nodejs'
 alias v01='ssh bddicken@v01.cs.arizona.edu'
 alias v='ssh bddicken@vision.cs.arizona.edu'
 alias lec='ssh bddicken@lectura.cs.arizona.edu'
@@ -43,6 +46,7 @@ alias v='ssh bddicken@vision.cs.arizona.edu'
 alias v01='ssh bddicken@v01.cs.arizona.edu'
 
 # utility aliases
+alias node='nodejs'
 alias c='clear'
 alias w='w | sort'
 alias thisissparta='rm'
@@ -79,12 +83,10 @@ alias psite='cd ~/Dropbox/bd/public_html/site'
 alias todo='vim ~/Dropbox/Documents/todo.txt'
 alias todoc='rm -rf ~/Dropbox/Documents/.*todo*'
 
-# compilers and interpreters
-#alias gcc="c99 -g -Wall"
-
 # system stuff
 BINTYPE=$ARCH.$OS
 
+# SVN aliases
 export SVN_EDITOR=vim
 
 # misc command overrides
@@ -102,14 +104,13 @@ export TERM="xterm-256color"
 #
 # lib path
 #
-LD_LIBRARY_PATH=/dataware/stock_pg_install/bin/:/dataware/stock_pg_install/lib
+LD_LIBRARY_PATH=/dataware/stock_pg_install/bin/:/dataware/stock_pg_install/lib:/usr/lib/python2.7/config-x86_64-linux-gnu/
 export LD_LIBRARY_PATH
 
 #
 # path
 #
 BINTYPE=$ARCH.$OS
-#PATH=/dataware/stock_pg_install/bin/:/dataware/stock_pg_install/lib
 PATH=$PATH:/dataware/irtools/opt/bin
 PATH=$PATH:/usr/local/sbin
 PATH=$PATH:/usr/sbin
@@ -120,13 +121,16 @@ PATH=$PATH:/usr/bin
 PATH=$PATH:~/bin
 PATH=$PATH:/home/bddicken/android-sdk-linux/tools/lib
 PATH=$PATH:/usr/texbin
-#PATH=$PATH:/usr/local/pgsql/bin
-PATH=$PATH:./
-PATH=$PATH:.
 PATH=$PATH:/usr/local/bin/mongodb-linux-x86_64-2.6.7/bin/
 PATH=$PATH:/dataware/tools/lib/clangllvm-3.4-x86_64-linux-gnu-ubuntu-13.10/bin/
+PATH=$PATH:/opt/intel/bin
+PATH=$PATH:./
+PATH=$PATH:.
 export PATH
 
+#
+# manpath
+# 
 MANPATH=$HOME/man
 MANPATH=$MANPATH:/usr/man:/usr/local/man:/usr/X11/man
 
