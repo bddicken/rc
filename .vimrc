@@ -56,9 +56,9 @@ cabbrev vre vertical resize
 let &t_Co=256
 
 " Basically, make tabs 2 spaces
-set tabstop=4
-set shiftwidth=4
-set sw=4
+set tabstop=2
+set shiftwidth=2
+set sw=2
 set expandtab
 
 " cursor line and column highlighting

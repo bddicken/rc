@@ -17,12 +17,14 @@
 #chsh -s /bin/zsh
 
 ### Linux 14.4 gives me an warning on startup when this is uncommented on 
-bindkey -e
+#bindkey -e
 
-PS1="\h>"
+#PS1="\h>"
+#PS1='\w\$ '
+PS1='$ '
 
-OS=`/bin/uname`
-ARCH=`/bin/uname -m`
+#OS=`/bin/uname`
+#ARCH=`/bin/uname -m`
 BINTYPE=$ARCH.$OS
 
 # git aliases
@@ -30,6 +32,7 @@ alias gf='git fetch'
 alias gp='git pull'
 alias gb='git branch'
 alias gfgp='gf ; gp'
+alias upps='git fetch ; git pull ; bundle exec jekyll build --incremental ; cp -r /root/dev/personal-site/_site/* /root/webserver/content/'
 
 # ssh aliases
 alias v01='ssh bddicken@v01.cs.arizona.edu'
@@ -94,7 +97,7 @@ export SVN_EDITOR=vim
 alias cinf="/usr/sbin/system_profiler"
 
 # change default prompt
-PS1="%/ <> "
+#PS1="%/ <> "
 
 #
 # Control color
