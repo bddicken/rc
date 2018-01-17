@@ -82,6 +82,10 @@ alias cl='cd ~/Classes'
 alias azw='cd /cd/projects/tau/installations/azdblab/web/apache-tomcat-7.0.30'
 alias psite='cd ~/Dropbox/bd/public_html/site'
 
+# teaching aliases
+alias 250="cd ~/dev/personal-site/courses/cs250/spring-2018"
+alias 101="cd ~/dev/personal-site/courses/cs101/spring-2018"
+
 # shortcut to my todo list
 alias todo='vim ~/Dropbox/Documents/todo.txt'
 alias todoc='rm -rf ~/Dropbox/Documents/.*todo*'
@@ -140,7 +144,7 @@ MANPATH=$MANPATH:/usr/man:/usr/local/man:/usr/X11/man
 #
 # Java CLASSPATH
 #
-export CLASSPATH=/usr/share/java/junit4.jar
+export CLASSPATH=/usr/share/java/junit4.jar:./
 
 #
 # history
