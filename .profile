@@ -186,6 +186,3 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # dataware general
 export PIN_HOME="/dataware/tools/lib/pin/"
 
-# Set ruby version
-export RUBY_VERSION=2.0.0
-
