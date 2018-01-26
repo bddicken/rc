@@ -33,6 +33,7 @@ alias gp='git pull'
 alias gb='git branch'
 alias gfgp='gf ; gp'
 alias upps='git fetch ; git pull ; bundle exec jekyll build --incremental ; cp -r /root/dev/personal-site/_site/* /root/webserver/content/'
+alias rupps='ssh root@104.236.5.206 "cd dev ; cd personal-site ; git fetch ; git pull ; /usr/local/rvm/gems/ruby-2.0.0-p648/wrappers/bundle exec jekyll build --incremental ; cp -r /root/dev/personal-site/_site/* /root/webserver/content/ ;"'
 
 # ssh aliases
 alias v01='ssh bddicken@v01.cs.arizona.edu'
