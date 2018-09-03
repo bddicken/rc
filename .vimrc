@@ -1,5 +1,5 @@
 " Use pathogen
-execute pathogen#infect()
+" execute pathogen#infect()
 
 "set the map leader
 let mapleader = "-"
@@ -72,7 +72,7 @@ nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 "
 " set vim as the default man page viewer
 "
-let $PAGER=''
+" let $PAGER=''
 
 " only syntax highlight up to 120 chars per row
 "set synmaxcol=120
