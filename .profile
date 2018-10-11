@@ -52,7 +52,7 @@ alias v01='ssh bddicken@v01.cs.arizona.edu'
 
 # utility aliases
 alias node='nodejs'
-alias c='clear'
+alias c='cd'
 alias w='w | sort'
 alias thisissparta='rm'
 alias vim='vim -O'
