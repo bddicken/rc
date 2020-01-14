@@ -33,6 +33,7 @@ alias gp='git pull'
 alias gb='git branch'
 alias gfgp='gf ; gp'
 alias upps='git fetch ; git pull ; bundle exec jekyll build --incremental ; cp -r /root/dev/personal-site/_site/* /root/webserver/content/'
+#alias rupps='ssh root@104.236.5.206 bash --login -c "cd dev ; cd personal-site ; git fetch ; git pull ; /root/gems/bin/bundle exec jekyll build --incremental ; cp -r /root/dev/personal-site/_site/* /root/webserver/content/ ;"'
 alias rupps='ssh root@104.236.5.206 "cd dev ; cd personal-site ; git fetch ; git pull ; /root/gems/bin/bundle exec jekyll build --incremental ; cp -r /root/dev/personal-site/_site/* /root/webserver/content/ ;"'
 alias upa='ssh root@104.236.5.206 "cd ./dev/attain ; git fetch ; git pull ; cp -r ./client/* ~/webserver/attain ; "'
 
@@ -87,7 +88,8 @@ alias psite='cd ~/Dropbox/bd/public_html/site'
 # teaching aliases
 alias 250="cd ~/dev/personal-site/courses/cs250/spring-2018"
 alias 101="cd ~/dev/personal-site/courses/cs101/spring-2018"
-alias 110="cd ~/dev/personal-site/courses/cs110/fall-2019"
+alias 110="cd ~/dev/personal-site/courses/cs110/spring-2020"
+alias 317="cd ~/dev/personal-site/courses/cs317/fall-2019"
 
 # shortcut to my todo list
 alias todo='vim ~/Dropbox/Documents/todo.txt'
