@@ -52,7 +52,6 @@ alias v='ssh bddicken@vision.cs.arizona.edu'
 alias v01='ssh bddicken@v01.cs.arizona.edu'
 
 # utility aliases
-alias node='nodejs'
 alias c='cd'
 alias w='w | sort'
 alias thisissparta='rm'
@@ -126,11 +125,11 @@ export LD_LIBRARY_PATH
 BINTYPE=$ARCH.$OS
 PATH=$PATH:/dataware/irtools/opt/bin
 PATH=$PATH:/usr/local/sbin
+PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/sbin
-PATH=$PATH:/sbin
-PATH=$PATH:/usr/local/bin:/sbin:/usr/sbin
-PATH=$PATH:/bin
 PATH=$PATH:/usr/bin
+PATH=$PATH:/sbin
+PATH=$PATH:/bin
 PATH=$PATH:~/bin
 PATH=$PATH:/home/bddicken/android-sdk-linux/tools/lib
 PATH=$PATH:/usr/texbin
@@ -139,7 +138,9 @@ PATH=$PATH:/dataware/tools/lib/clangllvm-3.4-x86_64-linux-gnu-ubuntu-13.10/bin/
 PATH=$PATH:/opt/intel/bin
 PATH=$PATH:./
 PATH=$PATH:.
+PATH=$PATH:$HOME/.rvm/bin
 export PATH
+echo "ABC 123 4"
 
 #
 # manpath
@@ -186,8 +187,6 @@ export EDITOR=vim
 #if [ -f ~/rc/.git-completion.bash ]; then
 #    . ~/rc/.git-completion.bash
 #fi
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # dataware general
 export PIN_HOME="/dataware/tools/lib/pin/"
