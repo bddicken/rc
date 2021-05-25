@@ -87,9 +87,9 @@ alias psite='cd ~/Dropbox/bd/public_html/site'
 # teaching aliases
 alias 250="cd ~/dev/personal-site/courses/cs250/spring-2018"
 alias 101="cd ~/dev/personal-site/courses/cs101/spring-2018"
-alias 110="cd ~/dev/personal-site/courses/cs110/spring-2021"
+alias 110="cd ~/dev/personal-site/courses/cs110/summer-2021"
 alias 317="cd ~/dev/personal-site/courses/cs317/fall-2020"
-alias 337="cd ~/dev/personal-site/courses/cs337/summer-2020"
+alias 337="cd ~/dev/personal-site/courses/cs337/summer-2021"
 
 # shortcut to my todo list
 alias todo='vim ~/Dropbox/Documents/todo.txt'
