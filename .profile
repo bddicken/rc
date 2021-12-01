@@ -162,6 +162,9 @@ export HISTSIZE=100000
 export SAVEHIST=100000
 export HISTFILE=~/.history
 
+setopt inc_append_history
+setopt share_history
+
 #
 # Use vim for man page viewing
 #
