@@ -141,7 +141,6 @@ PATH=$PATH:.
 PATH=$PATH:$HOME/.rvm/bin
 PATH=$PATH:/opt/homebrew/bin:$PATH
 export PATH
-echo "ABC 123 4"
 
 #
 # manpath
