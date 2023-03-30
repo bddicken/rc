@@ -76,9 +76,6 @@ alias fm='sudo sysctl -w vm.drop_caches=3'
 alias hg='history 0 | grep'
 alias cpur='sudo service cpufreqd restart'
 
-# dataware aliases
-alias astc='ast_creator'
-
 # directory aliases
 alias cl='cd ~/Classes'
 alias azw='cd /cd/projects/tau/installations/azdblab/web/apache-tomcat-7.0.30'
@@ -117,14 +114,13 @@ export TERM="xterm-256color"
 #
 # lib path
 #
-LD_LIBRARY_PATH=/dataware/stock_pg_install/bin/:/dataware/stock_pg_install/lib:/usr/lib/python2.7/config-x86_64-linux-gnu/
+LD_LIBRARY_PATH=/usr/lib/python2.7/config-x86_64-linux-gnu/
 export LD_LIBRARY_PATH
 
 #
 # path
 #
 BINTYPE=$ARCH.$OS
-PATH=$PATH:/dataware/irtools/opt/bin
 PATH=$PATH:/usr/local/sbin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/sbin
@@ -135,7 +131,6 @@ PATH=$PATH:~/bin
 PATH=$PATH:/home/bddicken/android-sdk-linux/tools/lib
 PATH=$PATH:/usr/texbin
 PATH=$PATH:/usr/local/bin/mongodb-linux-x86_64-2.6.7/bin/
-PATH=$PATH:/dataware/tools/lib/clangllvm-3.4-x86_64-linux-gnu-ubuntu-13.10/bin/
 PATH=$PATH:/opt/intel/bin
 PATH=$PATH:./
 PATH=$PATH:.
@@ -191,9 +186,5 @@ export EDITOR=vim
 #if [ -f ~/rc/.git-completion.bash ]; then
 #    . ~/rc/.git-completion.bash
 #fi
-
-# dataware general
-export PIN_HOME="/dataware/tools/lib/pin/"
-
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
