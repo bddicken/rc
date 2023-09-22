@@ -84,10 +84,10 @@ alias psite='cd ~/Dropbox/bd/public_html/site'
 # teaching aliases
 alias 250="cd ~/dev/personal-site/courses/cs250/spring-2018"
 alias 101="cd ~/dev/personal-site/courses/cs101/spring-2018"
-alias 110="cd ~/dev/personal-site/courses/cs110/fall-2022"
+alias 110="cd ~/dev/personal-site/courses/cs110/summer-2023"
 alias 317="cd ~/dev/personal-site/courses/cs317/spring-2022"
-alias 337="cd ~/dev/personal-site/courses/cs337/spring-2023"
-alias 352="cd ~/dev/personal-site/courses/cs352/spring-2023"
+alias 337="cd ~/dev/personal-site/courses/cs337/fall-2023"
+alias 352="cd ~/dev/personal-site/courses/cs352/summer-2023"
 
 # shortcut to my todo list
 alias todo='vim ~/Dropbox/Documents/todo.txt'
@@ -136,6 +136,7 @@ PATH=$PATH:./
 PATH=$PATH:.
 PATH=$PATH:$HOME/.rvm/bin
 PATH=$PATH:/opt/homebrew/bin:$PATH
+PATH="/opt/homebrew/opt/ruby@3.0/bin/:$PATH"
 export PATH
 
 #
@@ -188,3 +189,4 @@ export EDITOR=vim
 #fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
