@@ -174,3 +174,4 @@ augroup END
 " Echo a message on startup (disabled for now)
 " echom ">^.^<"
 
+set spell

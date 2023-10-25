@@ -33,8 +33,9 @@ alias gp='git pull'
 alias gb='git branch'
 alias gfgp='gf ; gp'
 alias upps='git fetch ; git pull ; bundle exec jekyll build --incremental ; cp -r /root/dev/personal-site/_site/* /root/webserver/content/'
-#alias rupps='ssh root@104.236.5.206 bash --login -c "cd dev ; cd personal-site ; git fetch ; git pull ; /root/gems/bin/bundle exec jekyll build --incremental ; cp -r /root/dev/personal-site/_site/* /root/webserver/content/ ;"'
-alias rupps='ssh root@104.236.5.206 "source /root/.profile ; source /root/.bashrc ; cd dev ; cd personal-site ; git fetch ; git pull ; /root/gems/bin/bundle exec jekyll build --incremental ; cp -r /root/dev/personal-site/_site/* /root/webserver/content/ ;"'
+#alias rupps='ssh root@104.236.5.206 bash --login -c "cd dev ; cd personal-site ; source ~/.bashrc ; git fetch ; git pull ; /root/gems/bin/bundle exec jekyll build --incremental ; cp -r /root/dev/personal-site/_site/* /root/webserver/content/ ;"'
+#alias rupps='ssh root@104.236.5.206 bash --login -c "source /root/.profile ; source /root/.bashrc ; cd dev ; cd personal-site ; git fetch ; git pull ; /root/gems/bin/bundle exec jekyll build --incremental ; cp -r /root/dev/personal-site/_site/* /root/webserver/content/ ;"'
+alias rupps='echo "source /root/.profile ; source /root/.bashrc ; cd dev ; cd personal-site ; git fetch ; git pull ; /root/gems/bin/bundle exec jekyll build --incremental ; cp -r /root/dev/personal-site/_site/* /root/webserver/content/ ;" | ssh root@104.236.5.206'
 alias upa='ssh root@104.236.5.206 "cd ./dev/attain ; git fetch ; git pull ; cp -r ./client/* ~/webserver/attain ; "'
 
 # ssh aliases
