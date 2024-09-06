@@ -56,7 +56,8 @@ alias v01='ssh bddicken@v01.cs.arizona.edu'
 alias c='cd'
 alias w='w | sort'
 alias thisissparta='rm'
-alias vim='vim -O'
+alias vim='nvim -O'
+alias nvim='nvim -O'
 alias webserv='python -m SimpleHTTPServer 8000'
 alias webservj='jekyll serve --watch'
 alias rls='find .'
@@ -143,8 +144,6 @@ export PATH
 #
 # manpath
 # 
-MANPATH=$HOME/man
-MANPATH=$MANPATH:/usr/man:/usr/local/man:/usr/X11/man
 
 #
 # Java CLASSPATH
@@ -191,3 +190,9 @@ export EDITOR=vim
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
+
+# Vitess binaries
+export PATH=~/vitess/vitess/bin:${PATH}
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

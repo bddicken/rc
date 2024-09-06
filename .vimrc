@@ -38,7 +38,7 @@ au BufWrite /private/etc/pw.* set nowritebackup
 
 " Set the vim color scheme to slate
 " colorscheme zenburn
-colorscheme slate
+colorscheme habamax
 
 
 " Clang-format and refresh current buffer
@@ -175,3 +175,5 @@ augroup END
 " echom ">^.^<"
 
 set spell
+
+set re=2
